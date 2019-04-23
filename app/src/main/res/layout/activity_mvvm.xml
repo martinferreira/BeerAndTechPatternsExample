@@ -33,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
+            android:onClick="@{viewModel.refresh}"
             app:srcCompat="@android:drawable/ic_dialog_email"/>
         <TextView
             android:id="@+id/txt_name"

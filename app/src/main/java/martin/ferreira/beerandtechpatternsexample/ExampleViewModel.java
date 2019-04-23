@@ -33,4 +33,8 @@ public class ExampleViewModel extends ViewModel {
         }
 
     }
+
+    public void refresh(View view){
+        model.notifyChange();
+    }
 }

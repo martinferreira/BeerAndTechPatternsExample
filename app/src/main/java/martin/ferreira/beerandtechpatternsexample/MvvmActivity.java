@@ -29,18 +29,9 @@ public class MvvmActivity extends AppCompatActivity { //This is the view
         viewModel = ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication()).create(ExampleViewModel.class);
         rebind();
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rebind();
-
-            }
-        });
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        
+
         //TODO : EditText Live editing
         //TODO : ButterKnife
     }

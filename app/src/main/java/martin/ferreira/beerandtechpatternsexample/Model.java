@@ -1,6 +1,8 @@
 package martin.ferreira.beerandtechpatternsexample;
 
-public class Model {
+import androidx.databinding.BaseObservable;
+
+public class Model extends BaseObservable {
     private String name = "Martin";
     private String surname = "Ferreira";
 
