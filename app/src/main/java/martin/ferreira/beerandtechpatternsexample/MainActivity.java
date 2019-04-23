@@ -35,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext() , MvpActivity.class));
             }
         });
+
+
+        Button mvvm = findViewById(R.id.btn_mvvm);
+        mvvm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext() , MvvmActivity.class));
+            }
+        });
     }
 
     @Override
